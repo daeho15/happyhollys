@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/happyhollys/static/css/main.5c557b54.css",
+    "main.js": "/happyhollys/static/js/main.9e85ad64.js",
+    "static/js/787.81e523fc.chunk.js": "/happyhollys/static/js/787.81e523fc.chunk.js",
+    "index.html": "/happyhollys/index.html",
+    "main.5c557b54.css.map": "/happyhollys/static/css/main.5c557b54.css.map",
+    "main.9e85ad64.js.map": "/happyhollys/static/js/main.9e85ad64.js.map",
+    "787.81e523fc.chunk.js.map": "/happyhollys/static/js/787.81e523fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c557b54.css",
+    "static/js/main.9e85ad64.js"
+  ]
+}
