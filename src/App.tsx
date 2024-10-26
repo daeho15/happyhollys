@@ -1,26 +1,32 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React!
-        </a>
-      </header>
-    </div>
-  );
+    const [searchTerm, setSearchTerm] = useState('1');
+    const handleNextSearch = () => {
+        setSearchTerm((parseInt(searchTerm)+1).toString())
+        const encodedSearchTerm = encodeURIComponent('scs-02 examtopics ' + searchTerm);
+        const luckyUrl = `https://www.google.com/search?q=${encodedSearchTerm}&btnI`;
+        window.open(luckyUrl, '_blank');
+    };
+    return (
+        <>
+            <div>
+                <h3>지금 : SCS-C02 examtopics {searchTerm}</h3>
+            </div>
+            <div>
+                <input
+                    type="text"
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    placeholder="검색어를 입력하세요"
+                />
+                <button onClick={handleNextSearch}>GOGO</button>
+            </div>
+        </>
+    );
 }
+
 
 export default App;
