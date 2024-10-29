@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 import mappings from './mappings.json'
 import './fixed-button.css'; // 
@@ -54,9 +54,9 @@ function App() {
             <div>
                 <h3>SCS-C02 examtopics</h3>
             </div>
-            <hr />
+            <hr/>
             <div>
-            <button
+                <button
                     id='button'
                     onClick={handleBackClick}
                 >
