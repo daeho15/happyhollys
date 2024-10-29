@@ -12,7 +12,7 @@ function App() {
     }, [index])
 
 
-    const handleClick = () => {
+    const handleNextClick = () => {
         setClicked(true)
         const map = mappings[parseInt(index) - 1]
         const nextIndex = (parseInt(index) + 1).toString()
@@ -30,7 +30,25 @@ function App() {
         }
     }
 
-    
+    const handleBackClick = () => {
+        setClicked(true)
+        const map = mappings[parseInt(index) - 1]
+        const nextIndex = (parseInt(index) - 1).toString()
+        if (map) {
+            const url = map.link
+            setIndex(nextIndex)
+            // setNext(nextIndex)
+            window.location.href = url
+        } else {
+            setIndex(nextIndex)
+            // setNext(nextIndex)
+            const encodedSearchTerm = encodeURIComponent('scs-02 examtopics ' + index);
+            const luckyUrl = `https://www.google.com/search?q=${encodedSearchTerm}&btnI`;
+            window.location.href = luckyUrl
+        }
+    }
+
+
     return (
         <>
             <div>
@@ -38,6 +56,12 @@ function App() {
             </div>
             <hr />
             <div>
+            <button
+                    id='button'
+                    onClick={handleBackClick}
+                >
+                    Go Back
+                </button>
                 <input
                     type="number"
                     value={index}
@@ -45,20 +69,29 @@ function App() {
                     placeholder="검색어를 입력하세요"
                     onKeyUp={(e) => {
                         if (e.key === 'Enter') {
-                            handleClick();
+                            handleNextClick();
                         }
                     }}
                 />
                 <button
                     id='button'
-                    onClick={handleClick}
-                >Go</button>
+                    onClick={handleNextClick}
+                >
+                    Go Next
+                </button>
+
             </div>
             <button
-                className="fixed-button"
-                onClick={handleClick}
+                className="fixed-next-button"
+                onClick={handleNextClick}
             >
-               Go
+                Next
+            </button>
+            <button
+                className="fixed-back-button"
+                onClick={handleBackClick}
+            >
+                Back
             </button>
         </>
     );
