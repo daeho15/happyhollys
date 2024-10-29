@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/happyhollys/static/css/main.6ab829bf.css",
-    "main.js": "/happyhollys/static/js/main.1d7ab6b2.js",
-    "static/js/787.81e523fc.chunk.js": "/happyhollys/static/js/787.81e523fc.chunk.js",
+    "main.css": "/happyhollys/static/css/main.2dc350d2.css",
+    "main.js": "/happyhollys/static/js/main.6e3d61a2.js",
+    "static/js/453.374ee44a.chunk.js": "/happyhollys/static/js/453.374ee44a.chunk.js",
     "index.html": "/happyhollys/index.html",
-    "main.6ab829bf.css.map": "/happyhollys/static/css/main.6ab829bf.css.map",
-    "main.1d7ab6b2.js.map": "/happyhollys/static/js/main.1d7ab6b2.js.map",
-    "787.81e523fc.chunk.js.map": "/happyhollys/static/js/787.81e523fc.chunk.js.map"
+    "main.2dc350d2.css.map": "/happyhollys/static/css/main.2dc350d2.css.map",
+    "main.6e3d61a2.js.map": "/happyhollys/static/js/main.6e3d61a2.js.map",
+    "453.374ee44a.chunk.js.map": "/happyhollys/static/js/453.374ee44a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ab829bf.css",
-    "static/js/main.1d7ab6b2.js"
+    "static/css/main.2dc350d2.css",
+    "static/js/main.6e3d61a2.js"
   ]
 }
