@@ -53,7 +53,7 @@ const Footer = () => (
 
 function App() {
   return (
-    <Router>
+    <Router basename="/happyhollys">
       <div className="app">
         <Header />
         <main className="main-content">
