@@ -46,7 +46,7 @@ const Header = () => (
 const Footer = () => (
   <footer className="footer">
     <div className="footer-container">
-      <p>&copy; 2025 Happy Hollys. All rights reserved.</p>
+      <p>&copy; 2026 Happy Hollys. All rights reserved.</p>
     </div>
   </footer>
 );
