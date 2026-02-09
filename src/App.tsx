@@ -6,14 +6,14 @@ import './App.css';
 const Home = () => (
   <div>
     <h2>Home Page</h2>
-    <p>Welcome to Happy Hollys!</p>
+    <p>Welcome to happyhollys!</p>
   </div>
 );
 
 const About = () => (
   <div>
     <h2>About</h2>
-    <p>Learn more about Happy Hollys.</p>
+    <p>Learn more about happyhollys.</p>
   </div>
 );
 
@@ -29,7 +29,7 @@ const Header = () => (
   <header className="header">
     <div className="header-container">
       <h1 className="logo">
-        <Link to="/">Happy Hollys</Link>
+        <Link to="/">happyhollys</Link>
       </h1>
       <nav className="nav">
         <ul className="nav-list">
@@ -46,7 +46,7 @@ const Header = () => (
 const Footer = () => (
   <footer className="footer">
     <div className="footer-container">
-      <p>&copy; 2026 Happy Hollys. All rights reserved.</p>
+      <p>&copy; 2026 happyhollys. All rights reserved.</p>
     </div>
   </footer>
 );
