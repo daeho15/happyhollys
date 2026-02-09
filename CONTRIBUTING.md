@@ -1,5 +1,28 @@
 # 개발 규율 (Development Guidelines)
 
+## ⚠️ 필수 규칙
+
+### 🔄 최신 main 브랜치 반영 (MANDATORY)
+**새 작업을 시작하거나 PR을 만들기 전에 반드시 가장 최신의 main 브랜치 사항을 반영해야 합니다.**
+
+```bash
+# 새 브랜치 생성 전
+git checkout main
+git pull origin main
+git checkout -b feature/new-feature
+
+# PR 생성 전 (작업 중인 브랜치에서)
+git checkout main
+git pull origin main
+git checkout feature/new-feature
+git merge main  # 또는 git rebase main
+```
+
+이 규칙을 지키지 않으면:
+- ❌ 머지 충돌 발생 가능
+- ❌ 이미 수정된 코드를 다시 수정하는 중복 작업 발생
+- ❌ PR 리뷰 지연
+
 ## 📋 Branch 명명 규칙
 
 브랜치명은 `타입/설명` 형식을 따릅니다.
